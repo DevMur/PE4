@@ -3,7 +3,7 @@
 #include <sstream>
 using namespace std;
 
-//devins version
+//master version
 
 //Fill the board with 0's, 1's can be X's and 2's can be O's
 //-1 as a return or at a location can denote failure.
