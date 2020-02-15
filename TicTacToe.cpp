@@ -8,6 +8,16 @@ using namespace std;
 //Fill the board with 0's, 1's can be X's and 2's can be O's
 //-1 as a return or at a location can denote failure.
 //there are only three keys to display.
+void DisplayBoard(vector<vector<int>> board){
+  for (int i = 0; i < 3; i++) //col#
+  {
+      for (int j = 0; j < 3; j++) //row element
+      {
+        cout << board[i][j] << " ";
+      }
+      cout << endl;
+  }
+}
 vector<vector<int>> createBoard()
 {
     vector<vector<int>> our_board; //solution
@@ -24,9 +34,11 @@ vector<vector<int>> createBoard()
     return our_board;
 }
 
+
 int main()
 {
     //a tictactoe board does not require anything too creative. It is a 3x3 matrix
     //nothing more, nothing less.
-    vector<vector<int>> board = createBoard(); 
+    vector<vector<int>> board = createBoard();
+    DisplayBoard(board);
 }
